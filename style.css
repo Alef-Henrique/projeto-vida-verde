@@ -292,6 +292,7 @@ p{
     }
     
     .botao{
+        
         display: flex;
         justify-content: center;
     }
@@ -351,6 +352,7 @@ p{
     .botao{
         display: flex;
         justify-content: center;
+    
     }
     
 }

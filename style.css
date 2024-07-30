@@ -241,8 +241,9 @@ p{
 /* RESPONSIVO PARA CELULAR */
 @media (max-width: 630px) {
  
-    .imagen_logo{
-        width: 135px;
+    .imagen_logo img{
+        width: 110px;
+
 
     }
 
@@ -253,8 +254,13 @@ p{
         
     }
     .paragrafo_logo{
-        font-size: 12px;
+        font-size: 10px;
     }
+    .title_logo{
+        font-size: 1.5em;
+    }
+
+
     .links_header{
         display: none;
         
@@ -279,7 +285,7 @@ p{
 
     }
     .container_title h1{
-        font-size: 2.9em;
+        font-size: 2.4em;
     }
     p{
         text-align:start;
@@ -291,7 +297,7 @@ p{
     }
 
     .pratodecomida img{
-        width: 410px;
+        width: 360px;
         height: auto;
     }
     .container_links{

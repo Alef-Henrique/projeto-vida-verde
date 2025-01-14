@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Lobster&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: aliceblue; 
+}
+.container-header{
+    background-color:aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 100px;
+    padding: 12px; 
+}
+.container-logo{
+    display: flex;
+    align-items: center; 
+}
+
+.img-logo img {
+    width: 150px;
+}
+
+.descriçao-logo{
+    text-align: center;
+}
+
+.title-logo {
+    font-size: 2.2em;
+    font-family: "Merienda", cursive;
+    font-weight: bold;
+    color:#437024;
+    padding: 0;
+}
+.paragrafo-logo{
+    font-size: .8em;
+    font-family: "Merienda", cursive;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color:#437024;
+}
+
+.container-links {
+    
+    display:flex;
+    list-style-type: none;
+    justify-content: space-around;
+    text-align: center;
+    width: 500px;
+}
+
+.container-links a:hover{
+    background-color: #2c4918;
+    border-radius: 12px;
+    color: aliceblue;
+    padding: 5px;
+    transition:0.5s;
+    transform: scale(1.06);
+    
+}
+
+ nav .container-links a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+    color: #437024;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: "Merienda", cursive;
+
+}
+
+.btn-abrir-menu i{
+    color:#2c4918;
+    font-size: 40px;
+    display: none;
+}
+
+.menu-mobile{
+    background-color: aliceblue;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    right: 0;
+    z-index: 9999;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    transition: .4s;    
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 1em;
+}
+
+.menu-mobile .btn-fechar i{
+    color:#2c4918;
+
+
+}
+.menu-mobile nav ul{
+    text-align: right;
+    list-style: none;
+
+}
+.menu-mobile nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 20px 1em;
+    line-height: 2em;
+    color: #437024;
+    font-size: 1.8em;
+    font-weight: bold;
+    font-family: "Merienda", cursive;
+
+}
+.menu-mobile nav ul li a:hover{
+    background-color:#2c4918;
+    color: aliceblue;
+}
+.overlay-menu{
+    background-color: rgba(187, 187, 187, 0.719) ;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+}
+
+.cabeçalho-sobre{
+    background-image:url(imagens/fundo-sobre.jpg);
+    background-size: cover;
+    height: 700px;
+
+}
+main{
+    padding: 2.5em;
+}
+
+h1{
+    text-align: center;
+    width: 700px;
+    font-size: 4.5em;
+    padding-left: 1em;
+    padding-top: 2em;
+    font-family: "Lobster", sans-serif;
+    color:#437024;
+    line-height: 1.2em;
+    text-shadow: 0 5px 0px rgba(255, 255, 255, 0.856);
+}
+.subtitle{
+    font-size: 2.5em;
+    font-family: "Merienda", cursive;
+    color:#2c4918;
+    text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.212);
+    padding-bottom: 0.5em;
+}
+.container-quem-somos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.texto-quem-somos{
+    width: 600px;
+}
+img{
+    width: 500px;
+    border-radius: 12px;
+    
+}
+p{
+    font-family: "Petrona", serif;
+    font-size: 1.3em;
+    
+}
+.container-planos img {
+    width: 250px;
+
+}
+.container-planos{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.mensagem-planos{
+    font-family: "Merienda", cursive;
+    color:#2c4918;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 15px;
+
+}
+
+.container-consultoria{
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 0 0 2em;
+    align-items: center;  
+}
+.container-texto-consultoria{
+    width: 600px;
+}
+video{
+    width: 600px;
+    padding: 2em;
+    border-radius: 50px;
+}
+.container-programa{
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 0 2em 0;
+    align-items: center;    
+}
+.container-texto-programa{
+    width: 600px;
+}
+.container-texto-pergunta{
+    display: flex;
+    justify-content: space-around;
+}
+.texto-pergunta{
+    width: 600px;
+}

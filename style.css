@@ -1,83 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Lobster&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* ESTILO GERAL */
 *{
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
-
 body{
-    background-image: url(imagens/green-wall-texture.jpg);
-
-
-
+    background-color: aliceblue;
 }
 
-/* ESTILO DO CABEÇALHO */
-
-.container_header{
+.container-header{
     background-color:aliceblue;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: auto;
+    justify-content:space-between;
     height: 100px;
-    padding: 12px;
-    
+    padding: 12px; 
 }
-.imagen_logo img {
-    width: 150px;
-}
-.container_logo{
+.container-logo{
     display: flex;
     align-items: center; 
 }
 
-.descrição_logo{
-    text-align: center;
-
+.img-logo img {
+    width: 150px;
 }
-.title_logo{
+
+.descriçao-logo{
+    text-align: center;
+}
+
+.title-logo{
     font-size: 2.2em;
     font-family: "Merienda", cursive;
     font-weight: bold;
     color:#437024;
+    padding: 0;
 }
-.paragrafo_logo{
+.paragrafo-logo{
     font-size: .8em;
     font-family: "Merienda", cursive;
     text-transform: uppercase;
     letter-spacing: 2.5px;
     color:#437024;
-
 }
 
-
-.container_links {
+.container-links {
     
     display:flex;
     list-style-type: none;
     justify-content: space-around;
     text-align: center;
-    width: 550px;
+    width: 500px;
 }
 
-.container_links a:hover{
+.container-links a:hover{
     background-color: #2c4918;
-    border-radius: 15px;
+    border-radius: 12px;
     color: aliceblue;
-    padding: 8px;
-    transition:  1s;
+    padding: 5px;
+    transition:0.5s;
     transform: scale(1.06);
-
-
+    
 }
- nav .container_links a {
+
+ nav .container-links a {
     display: inline-block;
     text-decoration: none;
-    padding: 8px;
+    padding: 5px;
     color: #437024;
     font-size: 1.2em;
     font-weight: bold;
@@ -85,15 +79,13 @@ body{
 
 }
 
-/* ESTILO MENU MOBILE*/
-
 .btn-abrir-menu i{
     color:#2c4918;
     font-size: 40px;
     display: none;
 }
 
-.menu_mobile{
+.menu-mobile{
     background-color: aliceblue;
     height: 100vh;
     position: fixed;
@@ -103,33 +95,32 @@ body{
     width: 0%;
     height: 100%;
     overflow: hidden;
-    transition: .4s;
-
-    
+    transition: .4s;    
 }
-.menu_mobile.abrir-menu{
+
+.menu-mobile.abrir-menu{
     width: 70%;
 }
 
-.menu_mobile.abrir-menu ~ .overlay-menu{
+.menu-mobile.abrir-menu ~ .overlay-menu{
     display: block;
 }
 
-.menu_mobile .btn-fechar{
+.menu-mobile .btn-fechar{
     padding: 20px 1em;
 }
 
-.menu_mobile .btn-fechar i{
+.menu-mobile .btn-fechar i{
     color:#2c4918;
 
 
 }
-.menu_mobile nav ul{
+.menu-mobile nav ul{
     text-align: right;
     list-style: none;
 
 }
-.menu_mobile nav ul li a {
+.menu-mobile nav ul li a {
     display: block;
     text-decoration: none;
     padding: 20px 1em;
@@ -140,7 +131,7 @@ body{
     font-family: "Merienda", cursive;
 
 }
-.menu_mobile nav ul li a:hover{
+.menu-mobile nav ul li a:hover{
     background-color:#2c4918;
     color: aliceblue;
 }
@@ -157,10 +148,11 @@ body{
 
 /* ESTILO NO MAIN */
 
-.section_redes{
+.section-redes ul{
     display: flex;
     flex-direction: column;
     gap: 2em;
+    list-style-type: none;
 
 }
 
@@ -176,54 +168,52 @@ i:hover{
 }
 
 
-.container_main{
-    margin-top: 3em;
+.container-main{
+    
     display:flex ;
     align-items: center;
     justify-content: space-evenly;
-    
+    background-image: url(imagens/green-wall-texture.jpg);
+    height: 700px;
+
 }
 
-.pratodecomida img{
+.img-prato img{
    height: 500px;
-
 }
 
     
-.apresentaçãodoprato{
+.apresentaçao{
 
-    width: 550px;
+    width: 650px;
     font-family: "Merienda", cursive;
     align-items: center;
 
 }
-span{
-    font-size: 0.6em;
-}
 
-.container_title h1{
+.container-title h1{
     font-family: "Lobster", sans-serif;
     padding-bottom: 30px;
     font-weight: 400;
-    font-size: 4em;
+    font-size: 5em;
     color:#2c4918;
     line-height: 1em;
-    text-shadow: 0 5px 0px rgb(255, 255, 255);
+    text-shadow: 0 5px 0px rgba(255, 255, 255, 0.61);
 
 
 }
-p{
-    font-size: 1.1em;
+.paragrafo-apresentaçao{
+    font-size: 1.2em;
     color: #1c300f;
     line-height: 1.7em;
     font-weight: bold;
 }
-.link_botao:hover{
+.link-botao:hover{
     transform: scale(1.06);
     transition:  0.5s;
 }
 
-.botao .link_botao{
+.botao .link-botao{
     background-color:#2c4918;
     text-decoration: none;
     padding: 12px;
@@ -233,50 +223,155 @@ p{
     border-radius: 10px;
     color: antiquewhite;
     font-weight: bold;
+}
+
+/*SEÇÃO DE QUESTIONARIO*/
+.imagem-mulher img{
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+}
+.container-texto-imagem{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 300px;
+    margin: 2.7em;
 
     
 }
+.container-textos h1{
+    font-size: 3em;
+    font-family: "Merienda", cursive;
+    color: #1c300f;
+    padding-bottom: 2rem;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 10px; /* Espaçamento entre os itens da grade */
+    width: 300px;
+  }
+  .grid-item {
+    font-size: 1.2em;
+    text-align: start;
+  }
 
+.bloco-paragrafo{
+    font-family: "Petrona", serif;
+    font-size: 1em;
+}
+
+.grid-item{
+    padding-bottom: 12px;
+}
+
+.grid-seçao-benficios {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 10px; 
+    width: 400px; 
+}
+.seçao-beneficios {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 18px;
+}
+.bloco-beneficios{
+    width: 300px;
+    font-family: "Petrona", serif;
+    font-size: 1.2em;
+    
+}
+h2{
+    font-size: 1.5em;
+    font-family: "Merienda", cursive;
+    color:#1c300f;
+    padding-bottom: 10px;
+}
+
+
+.title-beneficios{
+    text-align:center;
+    font-size: 2.5em;
+    padding: 2rem;
+    font-family: "Merienda", cursive;
+    color: #1c300f;
+}
+.blocos-pratos{
+    background-image: url(imagens/green-wall-texture.jpg);
+}
+
+.divisao-pratos img {
+    width: 250px;
+    padding: 1.3em;
+    border-radius: 32px;
+ 
+}
+
+
+.divisao-pratos{
+
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    text-align: center;
+
+}
+.title-pratos{
+    text-align:center;
+    font-size: 2.5em;
+    padding: 2rem;
+    font-family: "Merienda", cursive;
+    color: #1c300f;
+}
+.estilo-letra-prato{
+    font-family: "Lobster", sans-serif;
+    padding-bottom: 1em;
+    font-weight: 300;
+    font-size: 1.2em;
+    color:#1c300f;
+    line-height: 1em;
+
+}
 
 /* RESPONSIVO PARA CELULAR */
 @media (max-width: 630px) {
  
     .imagen_logo img{
         width: 110px;
-
-
     }
 
-    .container_header{
+    .container-header{
         display: flex;
         flex-direction: row;
         padding-left: 0;
         
     }
-    .paragrafo_logo{
+    .paragrafo-logo{
         font-size: 10px;
     }
-    .title_logo{
+    .title-logo{
         font-size: 1.5em;
     }
 
-
-    .links_header{
+    .container-links{
         display: none;
         
     }
-    .section_redes{
+    .section-redes ul{
         display: flex;
         flex-direction: row;
     }
 
-    .container_main{
+    .container-main{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     
-    .apresentaçãodoprato{
+    .apresentaçao{
         padding: 20px;
         margin-bottom: 120px;
         display: flex;
@@ -284,24 +379,24 @@ p{
         width: auto;
 
     }
-    .container_title h1{
+    .container-title h1{
         font-size: 2.4em;
     }
-    p{
+    .paragrafo-apresentaçao{
         text-align:start;
     }
     
     .botao{
-        
+
         display: flex;
         justify-content: center;
     }
 
-    .pratodecomida img{
+    .img-prato img{
         width: 360px;
         height: auto;
     }
-    .container_links{
+    .container-links{
         display: none;
     }
     .btn-abrir-menu i{
@@ -315,7 +410,7 @@ p{
 /* RESPONSIVO PARA TABLETES */
 
 @media (min-width:630px) and (max-width:1210px) {
-    .container_main{
+    .container-main{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -325,28 +420,26 @@ p{
         display: none;
     }
 
-    .container_links{
-        padding-top: 0px;
-
-    }
-    .section_redes{
+ 
+    .section-redes ul{
         padding-top: 30px;
         display: flex;
         flex-direction: row;
         gap: 50px;
     }
-    .links_header{
-        display: none;
-        
-    }
-    .container_header{
+
+    .container-header{
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
         height: 150px;
+        margin: 8px;
+        padding: 15px;
        
     }
-    .apresentaçãodoprato{
+    .img-logo{
+        display: none;
+    }
+    .apresentaçao{
         margin-bottom: 120px;
     }
     .botao{
@@ -354,6 +447,23 @@ p{
         justify-content: center;
     
     }
-    
-}
+    .container-texto-imagem{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .container-textos h1{
+        font-size: 2em;
+    }
+    .divisao-pratos  {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 200px 200px;
+        gap: 30px;
+        width: 100%;
 
+    }
+    .estilo-letra-prato{
+        justify-content: center;
+    }
+}

@@ -9,14 +9,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --cor-primaria:#1c300f;
+    --cor-secundaria:#2c4918;
+    --cor-terciaria: aliceblue;
+    --cor-quartenaria: #9abe82;
+
+}
 
 body {
-    background-color: aliceblue;
+    background-color:var(--cor-terciaria);
 }
 
 /*HEADER*/
 .container-header {
-    background-color: aliceblue;
+    background-color: var(--cor-terciaria);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,7 +48,7 @@ body {
     font-size: 2.2em;
     font-family: "Merienda", cursive;
     font-weight: bold;
-    color: #437024;
+    color:var(--cor-secundaria);
     padding: 0;
 }
 
@@ -50,7 +57,7 @@ body {
     font-family: "Merienda", cursive;
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    color: #437024;
+    color:var(--cor-secundaria)
 }
 
 .container-links {
@@ -65,9 +72,9 @@ body {
 }
 
 .container-links a:hover {
-    background-color: #2c4918;
+    background-color: var(--cor-secundaria);
     border-radius: 12px;
-    color: aliceblue;
+    color: var(--cor-terciaria);
     padding: 5px;
     transition: 0.5s;
     transform: scale(1.06);
@@ -78,7 +85,7 @@ nav .container-links a {
     display: inline-block;
     text-decoration: none;
     padding: 5px;
-    color: #437024;
+    color: var(--cor-secundaria);
     font-size: 1.2em;
     font-weight: bold;
     font-family: "Merienda", cursive;
@@ -90,13 +97,13 @@ nav .container-links a {
 /*MENU HAMBURGUER*/
 
 .btn-abrir-menu i {
-    color: #2c4918;
+    color:var(--cor-secundaria);
     font-size: 40px;
     display: none;
 }
 
 .menu-mobile {
-    background-color: aliceblue;
+    background-color:var(--cor-terciaria);
     height: 100vh;
     position: fixed;
     top: 0;
@@ -121,7 +128,7 @@ nav .container-links a {
 }
 
 .menu-mobile .btn-fechar i {
-    color: #2c4918;
+    color:var(--cor-primaria);
 
 
 }
@@ -137,7 +144,7 @@ nav .container-links a {
     text-decoration: none;
     padding: 20px 1em;
     line-height: 2em;
-    color: #437024;
+    color:var(--cor-secundaria);
     font-size: 1.8em;
     font-weight: bold;
     font-family: "Merienda", cursive;
@@ -175,12 +182,12 @@ nav .container-links a {
 
 i {
     font-size: 40px;
-    color: #1c300f;
+    color: var(--cor-primaria);
 
 }
 
 i:hover {
-    color: aliceblue;
+    color: var(--cor-terciaria);
     transition: 0.5s;
 }
 
@@ -210,16 +217,16 @@ i:hover {
     padding-bottom: 30px;
     font-weight: 400;
     font-size: 4.5em;
-    color: #2c4918;
+    color: var(--cor-primaria);
     line-height: 1em;
-    text-shadow: 0 5px 0px rgba(255, 255, 255, 0.61);
+    text-shadow: 0 5px 0px rgba(255, 255, 255, 0.945);
 
 
 }
 
 .paragrafo-apresentaçao {
     font-size: 1.2em;
-    color: #1c300f;
+    color: var(--cor-primaria);
     line-height: 1.7em;
     font-weight: bold;
     font-family: "Merienda", cursive;
@@ -231,7 +238,7 @@ i:hover {
 }
 
 .botao .link-botao {
-    background-color: #2c4918;
+    background-color: var(--cor-primaria);
     text-decoration: none;
     padding: 12px;
     display: inline-block;
@@ -260,14 +267,14 @@ i:hover {
 }
 
 .questionario {
-    background-color: aliceblue;
+    background-color: var(--cor-terciaria);
 }
 
 .pergunta-escolha {
     text-align: center;
     font-family: "Merienda", cursive;
     font-size: 40px;
-    color: #2c4918;
+    color: var(--cor-secundaria);
     padding-top: 100px;
 }
 
@@ -290,11 +297,11 @@ i:hover {
 }
 
 .beneficios {
-    background-color: #9abe82;
+    background-color:var(--cor-quartenaria);
 }
 
 .bloco-beneficios {
-    background-color: aliceblue;
+    background-color: var(--cor-terciaria);
 }
 
 .bloco-paragrafo {
@@ -307,7 +314,7 @@ i:hover {
 h2 {
     font-size: 1.5em;
     font-family: "Merienda", cursive;
-    color: #1c300f;
+    color: var(--cor-primaria);
     padding-bottom: 10px;
 }
 
@@ -317,12 +324,11 @@ h2 {
     font-size: 2.5em;
     padding: 2rem;
     font-family: "Merienda", cursive;
-    color: #1c300f;
-
+    color: var(--cor-primaria);
 }
 
 .blocos-pratos {
-    background-image: url(imagens/green-wall-texture.jpg);
+    background-color: var(--cor-terciaria);
 }
 
 .divisao-pratos img {
@@ -346,7 +352,7 @@ h2 {
     font-size: 2.5em;
     padding: 2rem;
     font-family: "Merienda", cursive;
-    color: #1c300f;
+    color: var(--cor-primaria);
 }
 
 .estilo-letra-prato {
@@ -354,7 +360,7 @@ h2 {
     padding-bottom: 1em;
     font-weight: 300;
     font-size: 1.2em;
-    color: #1c300f;
+    color: var(--cor-primaria);
     line-height: 1em;
 
 }
@@ -400,7 +406,7 @@ p {
 
 .mensagem-planos {
     font-family: "Merienda", cursive;
-    color: #2c4918;
+    color: var(--cor-secundaria);
     font-weight: bold;
     font-size: 1.3em;
     padding: 15px;
@@ -459,7 +465,7 @@ fieldset {
     width: 500px;
     margin: 0 auto;
     flex-direction: column;
-    border: 2px solid #437024;
+    border: 2px solid var(--cor-secundaria);
     border-radius: 10px;
 }
 
@@ -557,9 +563,6 @@ label {
     .btn-abrir-menu i {
         display: block;
     }
-
-
-
 }
 
 /* RESPONSIVO PARA TABLETES */

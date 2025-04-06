@@ -322,35 +322,55 @@ h2 {
 .title-beneficios {
     text-align: center;
     font-size: 2.5em;
-    padding: 2rem;
+    padding-top: 5rem;
     font-family: "Merienda", cursive;
     color: var(--cor-primaria);
+}
+.container-receitas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+
 }
 
 .blocos-pratos {
     background-color: var(--cor-terciaria);
 }
-
 .divisao-pratos img {
-    width: 250px;
-    padding: 1.3em;
-    border-radius: 32px;
-
+    width: 100%;
+    border-radius: 12px 12px 0 0;
 }
 
 .divisao-pratos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
 
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
+
+}
+.prato{
+    padding: 12px;
     text-align: center;
+    max-width: 75%;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.prato ul li{
+    list-style-type: none;
+}
+ul li p{
+    font-family: "Merienda", cursive;
+    font-size: 16px;
 
 }
 
 .title-pratos {
     text-align: center;
     font-size: 2.5em;
-    padding: 2rem;
+    padding: 5rem;
     font-family: "Merienda", cursive;
     color: var(--cor-primaria);
 }
@@ -359,13 +379,26 @@ h2 {
     font-family: "Lobster", sans-serif;
     padding-bottom: 1em;
     font-weight: 300;
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: var(--cor-primaria);
     line-height: 1em;
 
 }
 
 /*SOBRE NÓS*/
+.section-sobre-nos{
+    background-color: var(--cor-quartenaria);
+    padding-bottom: 100px;
+
+}
+.section-sobre-nos h1{
+    text-align: center;
+    font-family: "Merienda", cursive;
+    font-size:2.5em; 
+    color: var(--cor-primaria);
+    padding: 2em 0;
+
+}
 
 .container-quem-somos {
     display: flex;
@@ -374,42 +407,51 @@ h2 {
 
 }
 
-.texto-quem-somos {
+.texto-quem-somos, .container-texto-consultoria{
     width: 600px;
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    padding: 25px;
 }
 
-img {
+.container-quem-somos img {
     width: 500px;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.5);
     border-radius: 12px;
 
+}
+.container-planos img{
+    width: 250px;
+    border-radius: 12px 12px 0 0;
 }
 
 p {
     font-family: "Petrona", serif;
     font-size: 1.3em;
-
 }
-
-.container-planos img {
-    width: 250px;
-
-}
-
 .container-planos {
     display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
+    gap:16px;
+    grid-template-columns: 250px 250px 250px 250px;
     justify-content: center;
     text-align: center;
     padding-top: 2em;
     padding-bottom: 2em;
+}
+.item{
+    background-color: var(--cor-terciaria);
+    border-radius: 12px;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.5);
 }
 
 .mensagem-planos {
     font-family: "Merienda", cursive;
     color: var(--cor-secundaria);
     font-weight: bold;
-    font-size: 1.3em;
-    padding: 15px;
+    font-size: 1.2em;
+    padding: 5px;
 
 }
 
@@ -425,9 +467,10 @@ p {
 }
 
 video {
-    width: 600px;
-    padding: 2em;
-    border-radius: 50px;
+    width: 500px;
+
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
 }
 
 .container-programa {
@@ -444,6 +487,11 @@ video {
 .container-texto-pergunta {
     display: flex;
     justify-content: space-around;
+}
+.imagem-pegunta img{
+    width: 500px;
+    box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
 }
 
 .texto-pergunta {

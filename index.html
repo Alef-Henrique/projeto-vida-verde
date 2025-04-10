@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script src="menu.js" defer></script>
+    
     <title>Vida verde</title>
 </head>
 
@@ -26,10 +26,10 @@
 
         <nav>
             <ul class="container-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Receitas</a></li>
-                <li><a href="about.html">Sobre</a></li>
-                <li><a href="contact.html">Contato</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#receitas">Receitas</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
 
@@ -44,10 +44,10 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Receitas</a></li>
-                    <li><a href="about.html">Sobre</a></li>
-                    <li><a href="contact.html">Contato</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#receitas">Receitas</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -55,7 +55,7 @@
         <div class="overlay-menu" id="overlay-menu"></div>
     </header>
 
-    <main class="container-main">
+    <main class="container-main" id="home">
 
         <article class="apresentaçao">
 
@@ -67,214 +67,482 @@
             <div class="botao">
                 <a href="#" class="link-botao">Saiba mais</a>
             </div>
+
         </article>
 
 
         <div class="img-prato">
-            <img src="imagens/comida saudavel com tangerina.png" alt="prato de Comida">
+            <img src="imagens/salada-img.png" alt="prato de Comida">
+            <h1>Estamos nas redes sociais<br>Vem com a gente!</h1>
+            <ul class="section-redes">
+                
+                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+            </ul>
         </div>
-        <ul class="section-redes">
-            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
-            <li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
-            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
-        </ul>
-
-
-
     </main>
 
     <main class="questionario">
         <h1 class="pergunta-escolha">Por que escolher uma dieta vegetariana?</h1>
 
-    <section class="container-texto-imagem">
+        <section class="container-texto-imagem">
 
-        <div class="imagem-mulher">
-            <img src="imagens/fotodemulhercomendo.jpg" alt="mulher comendo salada">
-        </div>
-
-
-        <div class="grid-container">
-
-            <div class="grid-item">
-                <h2>Saúde</h2>
-                <p class="bloco-paragrafo">Estudos mostram que vegetarianos tendem a ter menor risco de doenças
-                    cardíacas, diabetes tipo 2 e alguns tipos de câncer.</p>
+            <div class="imagem-mulher">
+                <img src="imagens/fotodemulhercomendo.jpg" alt="mulher comendo salada">
             </div>
 
-            <div class="grid-item">
-                <h2>Ética</h2>
-                <p class="bloco-paragrafo">Muitos vegetarianos optam por essa dieta por questões éticas relacionadas
-                    ao bem-estar animal.</p>
-            </div>
 
-            <div class="grid-item">
-                <h2>Sustentabilidade</h2>
-                <p class="bloco-paragrafo">A produção de carne tem um impacto ambiental significativo. Uma dieta
-                    vegetariana contribui para a sustentabilidade do planeta.</p>
-            </div>
-            <div class="grid-item">
-                <h2>Bem-estar</h2>
-                <p class="bloco-paragrafo">Alimentos vegetais são ricos em nutrientes essenciais para a saúde física
-                    e mental.</p>
-            </div>
-        </div>
+            <div class="grid-container">
 
+                <div class="grid-item">
+                    <h2>Saúde</h2>
+                    <p class="bloco-paragrafo">Estudos mostram que vegetarianos tendem a ter menor risco de doenças
+                        cardíacas, diabetes tipo 2 e alguns tipos de câncer.</p>
+                </div>
 
-    </section>
+                <div class="grid-item">
+                    <h2>Ética</h2>
+                    <p class="bloco-paragrafo">Muitos vegetarianos optam por essa dieta por questões éticas relacionadas
+                        ao bem-estar animal.</p>
+                </div>
+
+                <div class="grid-item">
+                    <h2>Sustentabilidade</h2>
+                    <p class="bloco-paragrafo">A produção de carne tem um impacto ambiental significativo. Uma dieta
+                        vegetariana contribui para a sustentabilidade do planeta.</p>
+                </div>
+                <div class="grid-item">
+                    <h2>Bem-estar</h2>
+                    <p class="bloco-paragrafo">Alimentos vegetais são ricos em nutrientes essenciais para a saúde física e mental.</p>
+                </div>
+            </div>
+        </section>
 
     </main>
 
     <main class="beneficios">
         <h1 class="title-beneficios">Benefícios da alimentação vegetariana.</h1>
 
-    <section class="seçao-beneficios">
+        <section class="seçao-beneficios">
 
-        <div class="grid-beneficios">
-            <div class="bloco-beneficios">
-                <h2>Controle de Peso</h2>
-                <p class="bloco-paragrafo">Alimentos vegetais tendem a ser menos calóricos e ricos em fibras, o que pode
-                    ajudar na perda ou manutenção do peso.</p>
-            </div>
-    
-            <div class="bloco-beneficios">
-                <h2>Níveis de Energia</h2>
-                <p class="bloco-paragrafo">
-                    Uma dieta rica em frutas, vegetais e grãos integrais fornece energia sustentável ao longo do dia.
-                </p>
-            </div>
-    
-            <div class="bloco-beneficios">
-                <h2>Saúde Digestiva</h2>
-                <p class="bloco-paragrafo">
-                    A alta quantidade de fibras presente em alimentos vegetais contribui para uma digestão saudável e
-                    previne problemas como constipação.
-                </p>
-            </div>
-            <div class="bloco-beneficios">
-                <h2>Menor impacto ambiental</h2>
-                <p class="bloco-paragrafo">
-                    A produção de alimentos vegetais costuma gerar menos poluição, consumir menos água e usar menos recursos naturais do que a produção de carne.
-                </p>
+            <div class="grid-beneficios">
+                <div class="bloco-beneficios">
+                    <h2>Controle de Peso</h2>
+                    <p class="bloco-paragrafo">Alimentos vegetais tendem a ser menos calóricos e ricos em fibras, o que
+                        pode
+                        ajudar na perda ou manutenção do peso.</p>
+                </div>
+
+                <div class="bloco-beneficios">
+                    <h2>Níveis de Energia</h2>
+                    <p class="bloco-paragrafo">
+                        Uma dieta rica em frutas, vegetais e grãos integrais fornece energia sustentável ao longo do
+                        dia.
+                    </p>
+                </div>
+
+                <div class="bloco-beneficios">
+                    <h2>Saúde Digestiva</h2>
+                    <p class="bloco-paragrafo">
+                        A alta quantidade de fibras presente em alimentos vegetais contribui para uma digestão saudável
+                        e
+                        previne problemas como constipação.
+                    </p>
+                </div>
+                <div class="bloco-beneficios">
+                    <h2>Menor impacto ambiental</h2>
+                    <p class="bloco-paragrafo">
+                        A produção de alimentos vegetais costuma gerar menos poluição, consumir menos água e usar menos
+                        recursos naturais do que a produção de carne.
+                    </p>
+                </div>
+
             </div>
 
-        </div>
+            <div class="img-mulher-beneficios">
+                <img src="imagens/mulher-comendo-fruta.jpg" alt="mulher-comendo-fruta">
+            </div>
 
-        <div class="img-mulher-beneficios">
-            <img src="imagens/mulher-comendo-fruta.jpg" alt="mulher-comendo-fruta">
-        </div>
-
-    </section>
+        </section>
 
     </main>
-    
 
-    <section class="blocos-pratos">
-        <h1 class="title-pratos">Receitas vegetarianas deliciosas</h1>
+
+    <section class="blocos-pratos" id="receitas">
+        <h1 class="title-pratos">Receitas vegetarianas deliciosas.</h1>
         <article class="container-receitas">
             <div class="divisao-pratos">
 
-                <div class="prato">
-                    <img src="imagens/imagens-saladas/salada-caprese.jpg" alt="salada caprese">
-                    <h4 class="estilo-letra-prato">Salada caprese</h4>
-                    <ul>
-                        <li><p>Rica em antioxidantes.</p></li>
-                        <li><p>Fonte de cálcio e proteína.</p></li>
-                        <li><p>Combate inflamações.</p></li>
-                        <li><p>Estimula o sistema imunológico.</p></li>
-                    </ul>
-                </div>
-    
-                <div class="prato">
-                    <img src="imagens/imagens-saladas/salada-rucula-manga.jpg" alt="salada de rúcula">
-                    <h4 class="estilo-letra-prato"> Salada de rúcula com manga</h4>
-                    <ul>
-                        <li><p>Rica em vitamina K.</p></li>
-                        <li><p>Possui ação antioxidante e anti-inflamatória.</p></li>
-                        <li><p>Rica em vitamina C</p></li>
-                        <li><p>Contém betacaroteno, bom para pele e visão.</p></li>
-                    </ul>
-    
-                </div>
-    
-                <div class="prato">
-                    <img src="imagens/imagens-saladas/salada-lentilha.jpg" alt="salada de lentilha">
-                    <p class="estilo-letra-prato"> Salada de lentilha</p>
-                    <ul>
-                        <li><p>Excelente fonte de proteína vegetal.</p></li>
-                        <li><p>Rica em ferro, ajudando a prevenir anemia.</p></li>
-                        <li><p>Baixo índice glicêmico: ajuda no controle da glicose</p></li>
-                    </ul>
-    
-                </div>
-    
-                <div class="prato">
-    
-                    <img src="imagens/imagens-saladas/salada-graga.jpg" alt="salada grega">
-                    <p class="estilo-letra-prato">Salada grega</p>
-                    <ul>
-                        <li><p>Antioxidante.</p></li>
-                        <li><p>Rica em gorduras boas.</p></li>
-                        <li><p>Fortalece ossos.</p></li>
-                        <li><p>Hidrata o corpo.</p></li>
-                    </ul>
-    
-                </div>
-                <div class="prato">
-    
-                    <img src="imagens/imagens-saladas/salada de repolho.jpg" alt="salada-de-repolho">
-                    <p class="estilo-letra-prato">Salada de repolho</p>
-                    <ul>
-                        <li><p>Ajuda na digestão.</p></li>
-                        <li><p>Rica em fibras e vitamina C.</p></li>
-                        <li><p>Estimula a saciedade</p></li>
-                        <li><p>Fortalece o sistema imunológico.</p></li>
-                    </ul>
-    
-                </div>
-                <div class="prato">
-    
-                    <img src="imagens/imagens-saladas/salada-caesar.jpg" alt="salada-caesar">
-                    <p class="estilo-letra-prato">Salada caesar</p>
-                    <ul>
-                        <li><p>Rica em proteínas.</p></li>
-                        <li><p>Fonte de cálcio.</p></li>
-                        <li><p>Boa para a digestão.</p></li>
-                        <li><p>Fornece energia com moderação.</p></li>
-                    </ul>
-    
-                </div>
-                <div class="prato">
-    
-                    <img src="imagens/imagens-saladas/salada-de-folhas-frutas.jpg" alt="salada-de-folhas-frutas">
-                    <p class="estilo-letra-prato">Salada de folhas com frutas</p>
-                    <ul>
-                        <li><p>Rica em vitaminas (C, A, E).</p></li>
-                        <li><p>Combinação de fibras, antioxidantes e energia.</p></li>
-                        <li><p>Melhora o funcionamento do intestino</p></li>
+                <div class="container-flip-card">
+                    <div class="flip-card">
 
-                    </ul>
-    
+                        <div class="prato-frente">
+                            <img src="imagens/imagens-saladas/salada-caprese.jpg" alt="salada caprese">
+                            <h4 class="estilo-letra-prato">Salada caprese</h4>
+                            <ul>
+                                <li>
+                                    <p>Rica em antioxidantes.</p>
+                                </li>
+                                <li>
+                                    <p>Fonte de cálcio e proteína.</p>
+                                </li>
+                                <li>
+                                    <p>Combate inflamações.</p>
+                                </li>
+                                <li>
+                                    <p>Estimula o sistema imunológico.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="prato-verso">
+                            <ul>
+                                <h3>Ingrdientes</h3>
+                                <li>
+                                    <p>2 tomates maduros.</p>
+                                </li>
+                                <li>
+                                    <p>200g de muçarela de búfala.</p>
+                                </li>
+                                <li>
+                                    <p>Folhas frescas de manjericão.</p>
+                                </li>
+                                <li>
+                                    <p>Azeite de oliva extravirgem.</p>
+                                </li>
+                                <li>
+                                    <p>Sal a gosto</p>
+                                </li>
+                                <li>
+                                    <p>Pimenta-do-reino moída na hora.</p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <h3>Modo preparo</h3>
+                                <li>
+                                    <p>Monte camadas de tomate, muçarela e manjericão, tempere com azeite, sal e sirva.
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
                 </div>
-                <div class="prato">
-    
-                    <img src="imagens/imagens-saladas/salada-de-legumes.jpg" alt="salada de legumes">
-                    <p class="estilo-letra-prato">Salada de legumes</p>
-                    <ul>
-                        <li><p>Rica em fibras e vitaminas .</p></li>
-                        <li><p>Ajuda no controle glicêmico.</p></li>
-                        <li><p>Dá saciedade com poucas calorias</p></li>
-                        <li><p>Rica em ferro</p></li>
-                    </ul>
-    
+
+                <div class="container-flip-card">
+
+                    <div class="flip-card">
+
+                        <div class="prato-frente">
+                            <img src="imagens/imagens-saladas/salada-rucula-manga.jpg" alt="salada de rúcula">
+                            <h4 class="estilo-letra-prato"> Salada de rúcula com manga</h4>
+                            <ul>
+                                <li>
+                                    <p>Rica em vitamina K.</p>
+                                </li>
+                                <li>
+                                    <p>Possui ação anti-inflamatória.</p>
+                                </li>
+                                <li>
+                                    <p>Rica em vitamina C</p>
+                                </li>
+                                <li>
+                                    <p>Contém betacaroteno, bom para pele e visão.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="prato-verso">
+
+                            <ul>
+                                <h3>Ingrdientes</h3>
+                                <li>
+                                    <p> 1 manga madura cortada em tiras.</p>
+                                </li>
+                                <li>
+                                    <p>1 maço de rúcula lavada e escorrida.</p>
+                                </li>
+                                <li>
+                                    <p>1/2 cebola roxa fatiada bem fininha.</p>
+                                </li>
+                                <li>
+                                    <p>Tomatinhos cereja cortados ao meio.</p>
+                                </li>
+                                <li>
+                                    <p>Sal a gosto</p>
+                                </li>
+                                <li>
+                                    <p>Azeite de oliva extra virgem (2 a 3 colheres de sopa).</p>
+                                </li>
+                                <li>
+                                    <p>Suco de 1/2 limão ou vinagre balsâmico
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Sal e pimenta-do-reino a gosto</p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <h3>Modo preparo</h3>
+                                <li>
+                                    <p>Misture tudo, tempere com azeite, limão, sal e pimenta. Sirva fresca.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
                 </div>
+
+                <div class="container-flip-card">
+
+                    <div class="flip-card">
+
+                        <div class="prato-frente">
+                            <img src="imagens/imagens-saladas/salada-lentilha.jpg" alt="salada de lentilha">
+                            <p class="estilo-letra-prato"> Salada de lentilha</p>
+                            <ul>
+                                <li>
+                                    <p>Excelente fonte de proteína vegetal.</p>
+                                </li>
+                                <li>
+                                    <p>Rica em ferro, ajudando a prevenir anemia.</p>
+                                </li>
+                                <li>
+                                    <p>Baixo índice glicêmico: ajuda no controle da glicose</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="prato-verso">
+                            <ul>
+                                <h3>Ingrdientes</h3>
+                                <li>
+                                    <p>1 xícara de lentilha crua.</p>
+                                </li>
+                                <li>
+                                    <p>3 xícaras de água (para o cozimento).</p>
+                                </li>
+                                <li>
+                                    <p>1/2 cebola roxa picada bem fininha.</p>
+                                </li>
+                                <li>
+                                    <p>1 tomate sem sementes picado em cubinhos.</p>
+                                </li>
+                                <li>
+                                    <p>1/2 pimentão vermelho ou amarelo picado</p>
+                                </li>
+                                <li>
+                                    <p>2 colheres de sopa de azeite de oliva.</p>
+                                </li>
+                                <li>
+                                    <p>Sal e pimenta-do-reino </p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <h3>Modo preparo</h3>
+                                <li>
+                                    <p>Cozinhe a lentilha, misture com os demais ingredientes, tempere e leve à
+                                        geladeira antes de servir.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="container-flip-card">
+
+                    <div class="flip-card">
+
+                        <div class="prato-frente">
+
+                            <img src="imagens/imagens-saladas/salada-graga.jpg" alt="salada grega">
+                            <p class="estilo-letra-prato">Salada grega</p>
+                            <ul>
+                                <li>
+                                    <p>Antioxidante.</p>
+                                </li>
+                                <li>
+                                    <p>Rica em gorduras boas.</p>
+                                </li>
+                                <li>
+                                    <p>Fortalece ossos.</p>
+                                </li>
+                                <li>
+                                    <p>Hidrata o corpo.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="prato-verso">
+                            <ul>
+                                <h3>Ingrdientes</h3>
+                                <li>
+                                    <p>2 tomates maduros cortados em cubos grandes ou fatias grossas.</p>
+                                </li>
+                                <li>
+                                    <p>200g de muçarela de búfala.</p>
+                                </li>
+                                <li>
+                                    <p>1 pepino com casca cortado em rodelas ou meias-luas.</p>
+                                </li>
+                                <li>
+                                    <p>1/2 cebola roxa fatiada bem fininha.</p>
+                                </li>
+                                <li>
+                                    <p>100g de queijo feta cortado em cubos ou em pedaços grandes</p>
+                                </li>
+                                <li>
+                                    <p>2 a 3 colheres de sopa de azeite de oliva extra virgem</p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <h3>Modo preparo</h3>
+                                <li>
+                                    <p>Misture os legumes, adicione o queijo feta por cima, tempere e sirva.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-flip-card">
+
+                    <div class="flip-card">
+
+                        <div class="prato-frente">
+
+                            <img src="imagens/imagens-saladas/salada de repolho.jpg" alt="salada-de-repolho">
+                            <p class="estilo-letra-prato">Salada de repolho</p>
+                            <ul>
+                                <li>
+                                    <p>Ajuda na digestão.</p>
+                                </li>
+                                <li>
+                                    <p>Rica em fibras e vitamina C.</p>
+                                </li>
+                                <li>
+                                    <p>Estimula a saciedade</p>
+                                </li>
+                                <li>
+                                    <p>Fortalece o sistema imunológico.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="prato-verso">
+                            <ul>
+                                <h3>Ingrdientes</h3>
+                                <li>
+                                    <p>2 xícaras de repolho fatiado fininho (pode ser branco, roxo ou os dois).</p>
+                                </li>
+                                <li>
+                                    <p>1 cenoura ralada.</p>
+                                </li>
+                                <li>
+                                    <p>1/2 cebola fatiada (opcional).</p>
+                                </li>
+                                <li>
+                                    <p>2 colheres de sopa de maionese ou iogurte natural.</p>
+                                </li>
+                                <li>
+                                    <p>1 colher de sopa de vinagre ou suco de limão</p>
+                                </li>
+                                <li>
+                                    <p>Sal e pimenta-do-reino a gosto.</p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <h3>Modo preparo</h3>
+                                <li>
+                                    <p>Misture o repolho, cenoura e cebola. Tempere com maionese, vinagre, sal e
+                                        pimenta. Misture bem e leve à geladeira por alguns minutos antes de servir..</p>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="container-flip-card">
+                    <div class="flip-card">
+
+                        <div class="prato-frente">
+
+                            <img src="imagens/imagens-saladas/salada-caesar.jpg" alt="salada-caesar">
+                            <p class="estilo-letra-prato">Salada caesar</p>
+                            <ul>
+                                <li>
+                                    <p>Rica em proteínas.</p>
+                                </li>
+                                <li>
+                                    <p>Fonte de cálcio.</p>
+                                </li>
+                                <li>
+                                    <p>Boa para a digestão.</p>
+                                </li>
+                                <li>
+                                    <p>Fornece energia com moderação.</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="prato-verso">
+                            <ul>
+                                <h3>Ingrdientes</h3>
+                                <li>
+                                    <p>Alface romana picada grosseiramente.</p>
+                                </li>
+                                <li>
+                                    <p>Croutons (pedaços de pão torrado).</p>
+                                </li>
+                                <li>
+                                    <p>Queijo parmesão ralado ou em lascas.</p>
+                                </li>
+                                <li>
+                                    <p>Molho Caesar (pode ser pronto ou caseiro).</p>
+                                </li>
+                                <li>
+                                    <p>2 colheres de sopa de maionese</p>
+                                </li>
+                                <li>
+                                    <p>Suco de 1/2 limão</p>
+                                </li>
+                                <li>
+                                    <p>1 colher de sopa de queijo parmesão ralado</p>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <h3>Modo preparo</h3>
+                                <li>
+                                    <p>Misture a alface, os croutons e o parmesão.
+                                        Regue com o molho Caesar.
+                                        Misture bem e sirva na hora, para os croutons não amolecerem.</p>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
 
         </article>
-    
-        
+
+
     </section>
-    
-    <section class="section-sobre-nos">
+
+    <section class="section-sobre-nos" id="sobre">
         <h1>Sobre nós</h1>
         <article class="container-quem-somos">
 
@@ -283,129 +551,127 @@
             </div>
             <div class="texto-quem-somos">
                 <h2 class="subtitle">Quem Somos</h2>
-    
+
                 <p>Fundada em 2016, a Nutrição Verde nasceu da paixão de profissionais especializados em nutrição e
                     sustentabilidade, com o objetivo de oferecer uma abordagem holística e acessível à saúde alimentar.
-                    Nossa equipe é formada por nutricionistas qualificados, chefs especializados em culinária vegetariana e
+                    Nossa equipe é formada por nutricionistas qualificados, chefs especializados em culinária
+                    vegetariana e
                     pesquisadores focados em inovações alimentares.</p>
             </div>
-    
+
         </article>
         <article class="container-consultoria">
             <div class="container-texto-consultoria">
                 <h2 class="subtitle">O Que Oferecemos</h2>
-    
+
                 <p>Acreditamos que cada pessoa é única, e por isso, oferecemos um serviço personalizado de consultoria
-                    nutricional, baseado nas necessidades e objetivos individuais. Nossos nutricionistas especializados em
+                    nutricional, baseado nas necessidades e objetivos individuais. Nossos nutricionistas especializados
+                    em
                     dietas vegetarianas e veganas elaboram planos alimentares sob medida, adequados para:</p>
-    
+
             </div>
-    
+
             <video autoplay muted loop src="videos/viedo-salada3.mp4"></video>
-    
+
         </article>
         <section class="section-planos">
             <h1>Planos alimentares</h1>
             <aside class="container-planos">
 
                 <div class="item">
-                    
+
                     <img src="imagens/foto-mulher-exercicio.jpg" alt="imagem de mulher fazendo exercício" id="imagem">
-                    <div class="mensagem-planos">Melhorar o desempenho <br>físico</div>
-        
+                    <div class="mensagem-planos" id="infoExtra">Melhorar o desempenho <br>físico</div>
+
                 </div>
-        
+
                 <div class="item">
-                    
+
                     <img src="imagens/foto-mulher-peso.jpg" alt="mulher segurando a balança" id="imagem">
                     <div class="mensagem-planos">Perda de peso <br>saudável</div>
-        
+
                 </div>
                 <div class="item">
-                    
+
                     <img src="imagens/foto-mulher-diabete.jpg" alt="mulher com diabete" id="imagem">
                     <div class="mensagem-planos">Controle de doenças <br>crônicas</div>
                 </div>
                 <div class="item">
                     <img src="imagens/foto-homem-fruta.jpg" alt="homem segurando uma fruta" id="imagem">
                     <div class="mensagem-planos">Apoio à transição para dietas vegetarianas</div>
-    
+
                 </div>
             </aside>
 
         </section>
-        
-    
-    
+
     </section>
 
-    
+    <section class="contato" id="contato">
+        
+        <form id="form-contato">
 
-    
-
-    <article class="container-programa">
-
-        <video autoplay muted loop src="videos/video-menino.mp4"></video>
-        <div class="container-texto-programa">
-            <h2 class="subtitle">Programas Alimentares para Escolas</h2>
-            <p>
-                Nossa empresa também trabalha com instituições para implantar programas alimentares sustentáveis e
-                saudáveis em ambientes na educação. Desenvolvemos cardápios vegetarianos ricos em nutrientes, que
-                aumentam a produtividade, incentivam hábitos saudáveis e respeitam o meio ambiente.
-            </p>
-        </div>
-
-    </article>
-
-    <article class="container-texto-pergunta">
-        <div class="texto-pergunta">
-            <h2 class="subtitle">Por Que Escolher a Nutrição Verde?</h2>
-
-            <p>Optar por uma dieta vegetariana ou vegana não é apenas uma escolha de saúde, é um compromisso com um
-                futuro mais sustentável. Nossos serviços ajudam você a fazer essa transição de maneira saudável e
-                prazerosa. Com um suporte completo, desde orientação nutricional até o desenvolvimento de receitas
-                deliciosas, a Nutrição Verde transforma o ato de comer em uma experiência saudável e consciente.
-                Junte-se a nós e descubra como a alimentação vegetariana pode transformar sua vida!</p>
-        </div>
-        <div class="imagem-pegunta">
-            <img src="imagens/mulher pensando.jpg" alt="imagem de mulher pensando">
-
-        </div>
-    </article>
-
-    <form id="form-contato">
-
-        <fieldset>
-            <h2>Entre em Contato</h2>
+            <h2 class="title-contato">Entre em Contato</h2>
             <div class="container-dados">
-                <label for="name">Nome:</label>
+                
 
-                <input type="text" id="nome" name="nome" required>
+                <input type="text" id="nome" name="nome" required placeholder="Nome">
 
-                <label for="sobrenome"> Sobrenome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Sobrenome">
 
-                <input type="text" id="nome" name="nome" required>
-                <label for="e-mail">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="E-mail">
 
-                <input type="email" id="email" name="email" required>
+                <input type="tel" id="telefone" name="telefone" required placeholder="Telefone">
 
-                <label for="telefone">Telefone:</label>
-
-                <input type="tel" id="telefone" name="telefone" required>
-                <label for="mensagem">Mensagem: </label>
-
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Mensagem"></textarea>
 
                 <button type="submit">Enviar</button>
 
             </div>
 
-        </fieldset>
-
     </form>
+
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+
+
+          <div class="footer-logo">
+            <img src="imagens/logo-icone.png" alt="imagen da logo">
+            <h2>Vida Verde</h2>
+            <p class="paragrafo-logo">nutrição vegetariana</p>
+          </div>
+          <div class="footer-links">
+            <h3>Links da página:</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#receitas">Receitas</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-social">
+            <h3>Nos acompanhe:</h3>
+            <ul class="section-redes">
+                
+                <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2025 Vida Saudável. Todos os direitos reservados.</p>
+        </div>
+      </footer>
 
 
 
 </body>
+<script src="planos.js" defer></script>
+<script src="menu.js" defer></script>
+
 
 </html>

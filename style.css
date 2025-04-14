@@ -100,7 +100,7 @@ nav .container-links a {
 
 .btn-abrir-menu i {
     color: var(--cor-secundaria);
-    font-size: 40px;
+    font-size: 30px;
     display: none;
 }
 
@@ -200,11 +200,11 @@ i:hover {
     background-image: url(imagens/fundo-verde.jpg);
     background-size: cover;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
     height: 100vh;
-    width: 100%;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .img-prato img {
@@ -237,6 +237,7 @@ i:hover {
 
 .apresentaçao {
     width: 650px;
+    max-width: 1300px;
     font-family: "Merienda", cursive;
     align-items: center;
 
@@ -295,6 +296,8 @@ i:hover {
     justify-content: space-around;
     height: 100%;
     padding-bottom: 50px;
+    margin: 0 auto;
+    max-width: 1300px;
 }
 
 .questionario {
@@ -367,7 +370,8 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    margin: 50px auto;
+    max-width: 1300px;
 }
 
 .blocos-pratos {
@@ -527,11 +531,17 @@ ul li p {
     border-radius: 12px;
 
 }
+.container-quem-somos{
+    max-width: 1300px;
+    margin: 0 auto;
+}
 .container-consultoria {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .container-planos img {
@@ -606,8 +616,9 @@ video {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
+    width: 500px;
     gap: 10px;
-    width: 40vw;
     height: 500px;
     margin: 0 auto;
     background-color: var(--cor-quartenaria);
@@ -743,6 +754,7 @@ button:hover {
         justify-content: space-between;
         position: fixed;
         z-index: 3;
+        height: 70px;
     }
 
     .paragrafo-logo {
@@ -840,7 +852,7 @@ button:hover {
 
     }
     .item img{
-        height: 300px;
+        height: 350px;
     }
     .title-pratos{
         padding: 50px 0;
